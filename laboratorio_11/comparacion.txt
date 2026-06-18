@@ -1,0 +1,38 @@
+# Comparación Jacobi vs Gauss-Seidel
+
+Problema:
+Ecuación de Poisson 2D con condiciones de frontera de Dirichlet homogéneas y
+
+f(x,y) = sin(πx) sin(πy)
+
+Parámetros utilizados:
+
+* N = 50
+* h = 0.02
+* Tolerancia = 1×10⁻⁸
+
+## Resultados
+
+Método de Jacobi
+
+* Iteraciones: 4664
+* Error de convergencia final: 9.998846833836339×10⁻⁹
+* Error máximo respecto a la solución exacta: 1.1612814115047332×10⁻⁵
+
+Método de Gauss-Seidel
+
+* Iteraciones: 2509
+* Error de convergencia final: 9.961051108953178×10⁻⁹
+* Error máximo respecto a la solución exacta: 1.415343140435954×10⁻⁵
+
+## Discusión
+
+Ambos métodos alcanzaron satisfactoriamente la tolerancia especificada y produjeron soluciones muy cercanas a la solución analítica.
+
+El método de Jacobi necesitó 4664 iteraciones para converger, mientras que el método de Gauss-Seidel requirió únicamente 2509 iteraciones.
+
+Por lo tanto, Gauss-Seidel convergió aproximadamente 1.86 veces más rápido que Jacobi para este problema.
+
+Los errores máximos respecto a la solución exacta fueron del orden de 10⁻⁵ para ambos métodos, lo que indica una buena aproximación numérica de la solución analítica.
+
+En conclusión, ambos métodos producen resultados similares, pero Gauss-Seidel alcanza la convergencia en un número considerablemente menor de iteraciones.
